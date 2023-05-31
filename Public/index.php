@@ -1,5 +1,7 @@
 <?php 
-
+    echo "<pre>";
+    var_dump("Hola");
+    echo "</pre>";
     require __DIR__ . "/../includes/app.php";
 
     use MVC\Router;    
