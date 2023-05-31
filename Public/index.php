@@ -2,6 +2,7 @@
     echo "<pre>";
     var_dump("Hola");
     echo "</pre>";
+    echo __DIR__ . "/../includes/app.php";
     require __DIR__ . "/../includes/app.php";
 
     use MVC\Router;    
