@@ -1,5 +1,8 @@
 <?php 
-    require "/../includes/app.php";
+    echo "<pre>";
+    var_dump(__DIR__);
+    echo "</pre>";  
+    require_once "/../includes/app.php";
 
     use MVC\Router;    
     use Controllers\loginControllers;
