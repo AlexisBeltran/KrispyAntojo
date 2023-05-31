@@ -13,7 +13,6 @@
 
         public function ComprobarRutas(){
             session_start();
-            Debuguear("HOLA");
             $Autenticado = $_SESSION['login'] ?? null;
             $rutasProtegidas = ['/Dashboard/dashboard'];
             $UrlActual = $_SERVER['PATH_INFO'] ?? '/';
