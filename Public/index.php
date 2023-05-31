@@ -2,7 +2,7 @@
     echo "<pre>";
     var_dump(__DIR__);
     echo "</pre>";  
-    require_once "/../includes/app.php";
+    require_once __DIR__ . "/includes/app.php";
 
     use MVC\Router;    
     use Controllers\loginControllers;
