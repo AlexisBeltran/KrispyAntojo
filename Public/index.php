@@ -3,7 +3,7 @@
     var_dump("Hola");
     echo "</pre>";
     echo __DIR__ . "/../includes/app.php";
-    require __DIR__ . "/../includes/app.php";
+    require "/../includes/app.php";
 
     use MVC\Router;    
     use Controllers\loginControllers;
