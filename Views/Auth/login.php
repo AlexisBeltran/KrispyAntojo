@@ -2,7 +2,7 @@
     <main class="container ">
         <div class="row justify-content-center ">
             <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-1">
-                <form class="bg-white text-center flex-column bd-highligh px-3 pt-3 rounded-p shadow" style="height: 550px;" method="POST" action="/Public/index.php">
+                <form class="bg-white text-center flex-column bd-highligh px-3 pt-3 rounded-p shadow" style="height: 550px;" method="POST" action="/Public/index.php/">
                     <img class="img-fluid ps-lg-2 py-3" src="/Public/build/img/Logo.png" alt="">
                     <h1 class="h4 mb-3">INICIAR SESION</h1>
                     <!-- Correo -->
