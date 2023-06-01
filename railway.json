@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "name": "my-project",
+    "deployment": {
+      "buildCommand": "composer install",
+      "startCommand": "php -S 0.0.0.0:$PORT -t Public"
+    },
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/Public/index.php"
+      }
+    ]
+  }
+  
