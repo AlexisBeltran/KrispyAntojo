@@ -3,7 +3,7 @@
         <div class="row justify-content-center ">
             <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-1">
                 <form class="bg-white text-center flex-column bd-highligh px-3 pt-3 rounded-p shadow" style="height: 550px;" method="POST" action="/">
-                    <img class="img-fluid ps-lg-2 py-3" src="/build/img/Logo.png" alt="">
+                    <img class="img-fluid ps-lg-2 py-3" src="/Public/build/img/Logo.png" alt="">
                     <h1 class="h4 mb-3">INICIAR SESION</h1>
                     <!-- Correo -->
                     <?php if($Errores):?>

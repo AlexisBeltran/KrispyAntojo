@@ -54,7 +54,7 @@
        <?php if($Autenticado):?>
           <a class="cerrar-sesion" id="logout">
             <div class="profile-details">
-              <img src="/build/img/Fondo.png" alt="profileImg">
+              <img src="/Public/build/img/Fondo.png" alt="profileImg">
               <div class="name_job">
                 <div class="name"><?php echo $nombreSesion;?></div>
                 <div class="job"><?php echo $rolSesion === "3" ? 'Administrador' : 'Empleado';?></div>
