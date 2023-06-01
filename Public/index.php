@@ -1,5 +1,9 @@
 <?php 
+    echo "<pre>";
+    var_dump("Hola");
+    echo "</pre>";
     require_once __DIR__ . "/../includes/app.php";
+    Debuguear("after");
     use MVC\Router;    
     use Controllers\loginControllers;
     use Controllers\usuarioControllers;
