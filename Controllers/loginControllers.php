@@ -11,6 +11,7 @@
         }
         public static function login(Router $router){
             $Errores = Usuario::getError();
+            Debuguear($Errores);
             $login = new Usuario;
             if($_SERVER['REQUEST_METHOD'] === 'POST'){
                 $login = new Usuario($_POST);
