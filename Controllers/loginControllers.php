@@ -31,7 +31,7 @@
                     }
                 }
             }
-            $router->render('/Auth/login', [
+            $router->render('/Public/index.php/Auth/login', [
                 'Errores' => $Errores
             ]);
         }
@@ -52,7 +52,7 @@
             }
             // Finalmente, destruir la sesión.
             session_destroy();
-            header('Location: /');
+            header('Location: /Public/index.php');
         }
     }
 ?>

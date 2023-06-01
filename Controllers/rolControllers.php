@@ -33,7 +33,7 @@ use MVC\Router;
                     $rol->Guardar();
                 }
             }
-            $router->render('/rol/actualizar');            
+            $router->render('/Public/index.php/rol/actualizar');            
         }
 
         public static function Eliminar(){

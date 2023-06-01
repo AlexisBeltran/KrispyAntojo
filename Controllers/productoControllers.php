@@ -11,7 +11,7 @@
                 $producto = Producto::find($id);
                 $guardado = $producto->eliminar();
                 if($guardado){
-                    header('Location: /Dashboard/dashboard?View=5');
+                    header('Location: /Public/index.php/Dashboard/dashboard?View=5');
                 }
             }
         }
