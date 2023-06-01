@@ -15,7 +15,7 @@ use MVC\Router;
                     $rol->Guardar();
                 }
             }
-            $router->render('rol/crear', [
+            $router->render('Public/index.php/rol/crear', [
                 'rol' => $rol,
                 'Errores' => $Errores
             ]);
@@ -33,7 +33,7 @@ use MVC\Router;
                     $rol->Guardar();
                 }
             }
-            $router->render('/Public/index.php/rol/actualizar');            
+            $router->render('Public/index.php/rol/actualizar');            
         }
 
         public static function Eliminar(){

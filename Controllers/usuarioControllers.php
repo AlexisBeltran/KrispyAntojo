@@ -11,7 +11,7 @@
                     $usuario = Usuario::find($id);
                     $Resultado = $usuario->eliminar();
                     if($Resultado){
-                        header('Location: /Public/index.php/Dashboard/dashboard?View=2');
+                        header('Location: Public/index.php/Dashboard/dashboard?View=2');
                     }
                 }
             }   

@@ -5,7 +5,7 @@
     class loginControllers{
         public static function index(Router $router){
             $Errores = Usuario::getError();
-            $router->render('/Public/index.php/Auth/login', [
+            $router->render('Public/index.php/Auth/login', [
                 'Errores' => $Errores
             ]);
         }
@@ -31,7 +31,7 @@
                     }
                 }
             }
-            $router->render('/Public/index.php/Auth/login', [
+            $router->render('Public/index.php/Auth/login', [
                 'Errores' => $Errores
             ]);
         }
@@ -52,7 +52,7 @@
             }
             // Finalmente, destruir la sesión.
             session_destroy();
-            header('Location: /Public/index.php');
+            header('Location: Public/index.php');
         }
     }
 ?>
