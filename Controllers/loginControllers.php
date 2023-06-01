@@ -31,7 +31,7 @@
                     }
                 }
             }
-            $router->render('Public/index.php/Auth/login', [
+            $router->render('/Auth/login', [
                 'Errores' => $Errores
             ]);
         }
