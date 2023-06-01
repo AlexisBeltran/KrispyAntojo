@@ -15,7 +15,6 @@
             if($_SERVER['REQUEST_METHOD'] === 'POST'){
                 $login = new Usuario($_POST);
                 $Errores = $login->validarLogin();
-                Debuguear($Errores);
                 if(empty($Errores)){
                     //Verificar que el correo no exista
                     $Resultado = $login->existeEmail();

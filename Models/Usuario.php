@@ -1,7 +1,6 @@
 <?php 
     namespace Model;
-
-use MVC\Router;
+    use MVC\Router;
 
     class Usuario extends ActiveRecord{
 
