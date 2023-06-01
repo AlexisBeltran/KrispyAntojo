@@ -1,6 +1,13 @@
 <?php 
+    echo "<pre>";
+    var_dump("Hola");
+    echo "</pre>";
     require_once __DIR__ . "/../includes/app.php";
-    
+
+    echo "<pre>";
+    var_dump("AFTER");
+    echo "</pre>";
+
     use MVC\Router;    
     use Controllers\loginControllers;
     use Controllers\usuarioControllers;
