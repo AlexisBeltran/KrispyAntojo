@@ -53,7 +53,7 @@
         if(isset($view)){
             $View = filter_var($view, FILTER_VALIDATE_INT);
             if(!$View){
-                header("Location: ${url}");
+                header("Location: {$url}");
             }
             return $View;
         }

@@ -88,7 +88,7 @@ class ActiveRecord{
             return static::$Errores;
         }
         public static function getImage($id){
-            $Imagenes = "SELECT imagen FROM propiedades WHERE id = ${$id}";
+            $Imagenes = "SELECT imagen FROM propiedades WHERE id = {$id}";
             $Resultado = self::$db->query($Imagenes);
             return $Resultado;
         }
