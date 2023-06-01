@@ -5,7 +5,7 @@
     class loginControllers{
         public static function index(Router $router){
             $Errores = Usuario::getError();
-            $router->render('/Auth/login', [
+            $router->render('/Public/index.php/Auth/login', [
                 'Errores' => $Errores
             ]);
         }
