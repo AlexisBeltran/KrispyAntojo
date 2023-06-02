@@ -124,7 +124,6 @@
             }
 
             public function autenticar(){
-                session_start();
                 $_SESSION['login'] = true;
                 header('Location: /Dashboard/dashboard?View=1');
             }
