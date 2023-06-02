@@ -25,5 +25,4 @@
             $this->cambio_venta = $args['cambio_venta'] ?? '';
         }
     }
-
-?> 
+?>
