@@ -12,7 +12,7 @@ use MVC\Router;
     class dashboardControllers {
 
         public static function getViews(Router $router){
-            Debuguear("Aqui");
+            Debuguear("HOLA");
             $View = GetView('/Public/index.php/Dashboard/dashboard');
             switch($View){
                 case 1: 
