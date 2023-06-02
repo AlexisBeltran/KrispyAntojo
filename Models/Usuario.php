@@ -125,6 +125,7 @@
 
             public function autenticar(){
                 $_SESSION['login'] = true;
+                header("Location: /Public/index.php/Dashboard/dashboard?View=1");
             }
             
             public function PasswordHash(){
