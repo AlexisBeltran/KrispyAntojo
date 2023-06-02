@@ -126,6 +126,8 @@
             public function autenticar(){
                 $_SESSION['login'] = true;
                 header('Location: /Public/index.php/Dashboard/dashboard?View=1');
+                exit(); // Asegúrate de que no haya ninguna salida de datos después de la redirección
+
             }
             
             public function PasswordHash(){
