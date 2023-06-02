@@ -12,10 +12,10 @@ use MVC\Router;
     class dashboardControllers {
 
         public static function getViews(Router $router){
-            $View = GetView('/Public/index.php/Dashboard/dashboard');
+            $View = GetView('Public/index.php/Dashboard/dashboard');
             switch($View){
                 case 1: 
-                    $router->render('/Public/index.php/Dashboard/dashboard', [
+                    $router->render('Dashboard/dashboard', [
                         'View' => $View
                     ]);
                     break;
@@ -49,7 +49,7 @@ use MVC\Router;
         }
 
         public static function postViews(Router $router){
-            $View = GetView('/Public/index.php/Dashboard/dashboard');
+            $View = GetView('Public/index.php/Dashboard/dashboard');
             switch($View){
                 case 2: 
                     static::searchUser($router, $View);
@@ -78,7 +78,7 @@ use MVC\Router;
         public static function GetUsers($router, $View){
             $usuario = new Usuario;
             $allUsers = $usuario->AllUser();
-            $router->render('/Public/index.php/Dashboard/dashboard',[
+            $router->render('Dashboard/dashboard',[
                 'View' => $View,
                 'allUsers' => $allUsers
             ]);
@@ -88,7 +88,7 @@ use MVC\Router;
             $Rol = Rol::all();
             $Errores = Usuario::getError();
             $ChangePass = true;
-            $router->render('/Public/index.php/Dashboard/dashboard',[
+            $router->render('Dashboard/dashboard',[
                 'usuario' => $usuario,
                 'Errores' => $Errores,
                 'Rol' => $Rol,
@@ -112,11 +112,11 @@ use MVC\Router;
                     $usuario->fechamod_usuario = date('Y/m/d');
                     $guardado = $usuario->Guardar();
                     if($guardado){
-                        header('Location: /Public/index.php/Dashboard/dashboard?View=2');
+                        header('Location: Dashboard/dashboard?View=2');
                     }
                 }
             }
-            $router->render('/Public/index.php/Dashboard/dashboard', [
+            $router->render('Dashboard/dashboard', [
                 'View' => $View,
                 'usuario' => $usuario,
                 'Errores' => $Errores,
@@ -147,7 +147,7 @@ use MVC\Router;
                     $producto->fechamod_producto = date('Y/m/d');
                     $guardado = $producto->Guardar();
                     if($guardado){
-                        header('Location: /Public/index.php/Dashboard/dashboard?View=5');
+                        header('Location: Public/index.php/Dashboard/dashboard?View=5');
                     }
                 }
             }
