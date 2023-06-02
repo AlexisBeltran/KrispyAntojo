@@ -24,6 +24,7 @@
             } else{
                 $fn = $this->RutasPOST[$UrlActual] ?? null;
             }
+
             //Proteger las rutas
             if(in_array($UrlActual, $rutasProtegidas) && !$Autenticado){
                 header('Location: /');

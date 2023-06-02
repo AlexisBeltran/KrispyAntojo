@@ -12,6 +12,7 @@ use MVC\Router;
     class dashboardControllers {
 
         public static function getViews(Router $router){
+            Debuguear($router);
             $View = GetView('Dashboard/dashboard');
             switch($View){
                 case 1: 
