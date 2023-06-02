@@ -6,14 +6,12 @@
     use Model\Usuario;
     use Model\Rol;
     use Model\Producto;
-use Model\Venta;
-use MVC\Router;
+    use MVC\Router;
     
     class dashboardControllers {
 
         public static function getViews(Router $router){
-            Debuguear($router);
-            $View = GetView('Dashboard/dashboard');
+            $View = GetView('/Public/index.php/Dashboard/dashboard?View=1');
             switch($View){
                 case 1: 
                     $router->render('Dashboard/dashboard', [
