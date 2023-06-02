@@ -1,8 +1,8 @@
 <?php 
     namespace Controllers;
     use Model\Rol;
-use Model\Usuario;
-use MVC\Router;
+    use Model\Usuario;
+    use MVC\Router;
     
     class rolControllers{
         public static function crear(Router $router){
@@ -15,7 +15,7 @@ use MVC\Router;
                     $rol->Guardar();
                 }
             }
-            $router->render('Public/index.php/rol/crear', [
+            $router->render('rol/crear', [
                 'rol' => $rol,
                 'Errores' => $Errores
             ]);
@@ -33,7 +33,7 @@ use MVC\Router;
                     $rol->Guardar();
                 }
             }
-            $router->render('Public/index.php/rol/actualizar');            
+            $router->render('rol/actualizar');            
         }
 
         public static function Eliminar(){

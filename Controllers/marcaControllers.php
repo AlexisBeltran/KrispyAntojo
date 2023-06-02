@@ -33,7 +33,7 @@ class marcaControllers{
                     $marca->Guardar();
                 }
             }
-            $router->render('Public/index.php/marca/actualizar');            
+            $router->render('marca/actualizar');            
         }
     
         public static function Eliminar(){

@@ -11,7 +11,7 @@
                     </svg>
                 </a>
                 <div class="buscar">
-                    <form action="/Dashboard/dashboard?View=2" method="POST">
+                    <form action="/Public/index.php/Dashboard/dashboard?View=2" method="POST">
                         <input type="search" class="input-buscador" name="busqueda" id="input-buscador" placeholder="Busca por nombre, apellido o rol...">
                         <input type="submit" value="Buscar">
                     </form>

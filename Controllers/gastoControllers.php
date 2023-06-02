@@ -14,7 +14,7 @@
                     $gasto->Guardar();
                 }
             }
-            $router->render('/gasto/crear', [
+            $router->render('gasto/crear', [
                 'gasto' => $gasto,
                 'Errores' => $Errores
             ]);
@@ -31,7 +31,7 @@
                     $gasto->Guardar();
                 }
             }
-            $router->render('Public/index.php/gasto/actualizar', [
+            $router->render('gasto/actualizar', [
                 'gasto' => $gasto,
                 'Errores' => $Errores
             ]);
