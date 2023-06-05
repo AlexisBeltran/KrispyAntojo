@@ -13,8 +13,8 @@
             $Errores = Usuario::getError();
             $login = new Usuario;
             if($_SERVER['REQUEST_METHOD'] === 'POST'){
-                echo "POST";
                 $login = new Usuario($_POST);
+                Debuguear($login);
                 $Errores = $login->validarLogin();
                 if(empty($Errores)){
                     //Verificar que el correo no exista
