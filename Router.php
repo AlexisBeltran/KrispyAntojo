@@ -33,9 +33,6 @@
             if($fn){
                 //La URL existe y hay una funcion asociada
                 //php -S localhost:3000
-                echo "<pre>";
-                var_dump($fn);
-                echo "</pre>";
 
                 call_user_func($fn, $this);
             }else{
