@@ -6,12 +6,14 @@
 
         public function get($url, $fn){
             $this->RutasGET[$url] = $fn;
-            Debuguear($this->RutasGET);
+            echo "<pre>";
+            var_dump($this->RutasGET);
+            echo "</pre>";
         }
         public function post($url, $fn){
             $this->RutasPOST[$url] = $fn;
             echo "<pre>";
-            var_dump($this->RutasGET);
+            var_dump($this->RutasPOST);
             echo "</pre>";
         }
 
