@@ -12,6 +12,9 @@
 
         public static function getViews(Router $router){
             $View = GetView('/Public/index.php/Dashboard/dashboard?View=1');
+            echo "<pre>";
+            var_dump($View);
+            echo "</pre>";
             switch($View){
                 case 1: 
                     $router->render('Dashboard/dashboard', [
