@@ -15,7 +15,7 @@
     $Router->get('/logout', [loginControllers::class, 'logout']);
 
     //DASHBOARD AREA
-    $Router->get('/Public/index.php/Dashboard/dashboard', [dashboardControllers::class, 'getViews']);
+    $Router->get('/Dashboard/dashboard', [dashboardControllers::class, 'getViews']);
     $Router->post('/Dashboard/dashboard', [dashboardControllers::class, 'postViews']);
     $Router->post('/Dashboard/eliminar', [usuarioControllers::class, 'Eliminar']);
     $Router->post('/Dashboard/eliminar-producto', [productoControllers::class, 'Eliminar']);
