@@ -30,7 +30,6 @@
                 header('Location: /');
             }
             if($fn){
-                Debuguear($fn);
                 //La URL existe y hay una funcion asociada
                 //php -S localhost:3000
                 call_user_func($fn, $this);
