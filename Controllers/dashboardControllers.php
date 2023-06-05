@@ -11,6 +11,9 @@
     class dashboardControllers {
 
         public static function getViews(Router $router){
+            echo "<pre>";
+            var_dump($router);
+            echo "</pre>";
             $View = GetView('/Public/index.php/Dashboard/dashboard?View=1');
             echo "<pre>";
             var_dump($View);
