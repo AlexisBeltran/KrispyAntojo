@@ -13,6 +13,9 @@
     ],
     "env": {
       "DIRECTORY" : "/Public/index.php"
+    },
+    "build": {
+      "root": "/app/Public/index.php"
     }
     
   }
