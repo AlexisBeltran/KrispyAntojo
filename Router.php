@@ -26,11 +26,7 @@
 
             //Proteger las rutas
 
-            echo "<pre>";
-            var_dump($fn);
-            echo "</pre>";
-
-            if(in_array($UrlActual, $rutasProtegidas) && !$Autenticado){
+            if(in_array($UrlActual, $rutasProtegidas, !$fn) && !$Autenticado){
                 header('Location: /');
             }
             if($fn){
