@@ -10,6 +10,9 @@
         }
         public function post($url, $fn){
             $this->RutasPOST[$url] = $fn;
+            echo "<pre>";
+            var_dump($this->RutasGET);
+            echo "</pre>";
         }
 
         public function ComprobarRutas(){
