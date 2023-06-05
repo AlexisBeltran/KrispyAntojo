@@ -6,6 +6,7 @@
 
         public function get($url, $fn){
             $this->RutasGET[$url] = $fn;
+            Debuguear($this->RutasGET);
         }
         public function post($url, $fn){
             $this->RutasPOST[$url] = $fn;
