@@ -13,6 +13,7 @@
             $Errores = Usuario::getError();
             $login = new Usuario;
             if($_SERVER['REQUEST_METHOD'] === 'POST'){
+                echo "POST";
                 $login = new Usuario($_POST);
                 $Errores = $login->validarLogin();
                 if(empty($Errores)){
