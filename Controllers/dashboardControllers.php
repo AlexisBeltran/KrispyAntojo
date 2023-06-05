@@ -11,6 +11,7 @@
     class dashboardControllers {
 
         public static function getViews(Router $router){
+            echo "VISTA NUMERO 1...";
             $View = GetView('/Public/index.php/Dashboard/dashboard?View=1');
             switch($View){
                 case 1: 
