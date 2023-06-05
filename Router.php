@@ -6,15 +6,10 @@
 
         public function get($url, $fn){
             $this->RutasGET[$url] = $fn;
-            echo "<pre>";
-            var_dump($this->RutasGET);
-            echo "</pre>";
+           
         }
         public function post($url, $fn){
             $this->RutasPOST[$url] = $fn;
-            echo "<pre>";
-            var_dump($this->RutasPOST);
-            echo "</pre>";
         }
 
         public function ComprobarRutas(){
@@ -32,12 +27,16 @@
 
             //Proteger las rutas
 
-            if(in_array($UrlActual, $rutasProtegidas, !$fn) && !$Autenticado){
+            if(in_array($UrlActual, $rutasProtegidas) && !$Autenticado){
                 header('Location: /');
             }
             if($fn){
                 //La URL existe y hay una funcion asociada
                 //php -S localhost:3000
+                echo "<pre>";
+                var_dump($fn);
+                echo "</pre>";
+
                 call_user_func($fn, $this);
             }else{
                 //Pagina 404
