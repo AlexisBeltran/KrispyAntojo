@@ -124,6 +124,7 @@
             }
 
             public function autenticar(){
+                echo "AUTENTICANDO...";
                 $_SESSION['login'] = true;
                 session_start();
                 header("location: /Public/index.php/Dashboard/dashboard?View=1");
