@@ -24,7 +24,6 @@
                         //Verificar el password
                         $Autenticado = $login->comprobarPassword($Resultado);
                         if($Autenticado){
-                            Debuguear("Autenticado...");
                             $login->autenticar();
                         }else{
                             $Errores = Usuario::getError();
